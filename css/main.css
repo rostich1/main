@@ -32,8 +32,7 @@ html,body{
   font-family: 'Quicksand';
   font-style: normal;
   font-size: 16px;
-  background-image: url(https://static9.depositphotos.com/1006075/1197/i/450/depositphotos_11973672-stock-photo-cupcakes.jpg)
-  background-repeat:no-repeat;
+
 }
 *,*::after,*::before{
   box-sizing: inherit;
@@ -118,7 +117,7 @@ header{
 .text_3{
   width: 484px;
   height: 167px;
-  
+
 }
 .ff{
   width: 469px;
