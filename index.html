@@ -1,35 +1,244 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>UI/UX Designer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
-	<header>
+	<div id="modal" class="modal-visible modal-invisible">
+		<FORm>
+			<p>
+				<input type="text" name="username" placeholder='Your name' class="your_name"><br>
+				<input type="email" name="email" placeholder='Your email' class="email"><br>
+				<input type="password" name="password" placeholder='Your password' class="password"><br>
+			</p>
+			<p>
+				<input type="reset" value="Reset" name="reset" class="reset">
+				<input type="submit" value="Submit" name="submit" class="submit">
+
+
+			</p>
+			<p><span id="close">X</span></p>
+		</FORm>
+	</div>
+	<div class="parent-header" id='parentHeader'>
 		<div class="header">
-			<div class="thrivetalk"><a href="#" >Thrivetalk</a></div>	
+			<div class="thrivetalk"><a href="#">Thrivetalk</a></div>
 			<nav>
-				<ul class="menu">
+				<div id="menu_burger" class="burger-lg burger-sm">
+					<img src="images/burger_main.png">
+				</div>
+				<ul class="menu d-none" id="menu">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="#about">About</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Blog</a></li>
 				</ul>
 			</nav>
-			<div class="contact"><a href="#">Contact Us</a></div>
+			<div class="contact" id="contact"><a href="#">Contact Us</a></div>
 		</div>
-		<div class="helping">
-			
-		</div>
-		<div class="thrivetalk"><a href="#" >Thrivetalk</a></div>	
-		<div class="text_3"><a href="#">Helping You Thrive In all Areas of life</a></div>
-		<div class="ff"><a href="#">Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</a></div>
-		
-	</header>
-	
+	</div>
 
+	<header id="header">
+
+		<div class="text_box">
+			<div class="thrivetalk"><a href="#">Thrivetalk</a></div>
+			<div class="text_3"><a href="#">Helping You Thrive In all Areas of life</a></div>
+			<div class="ff"><a href="#">Our highly talented therapists can help you with a range of issues including
+					relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</a>
+			</div>
+			<div class="box">
+				<div class="text_4"><a href="#">WHO AM I</a></div>
+				<div class="text_5"><a href="#">WHAT DO I DO</a></div>
+			</div>
+		</div>
+	</header>
+	<div class="slider">
+		<span id="slider_left" class="toggle">&lt;</span>
+
+		<ul id="slides">
+
+			<li class="slide showing"><a href="#"></a></li>
+			<li class="slide"><a href="#"></a></li>
+			<li class="slide"><a href="#"></a></li>
+			<li class="slide"><a href="#"></a></li>
+			<li class="slide"><a href="#"></a></li>
+
+		</ul>
+		<span id="slider_right" class="toggle"> &gt;</span>
+		<p id="toggle_radio">
+			<input type="radio" name="slider" value="0" checked>
+			<input type="radio" name="slider" value="1">
+			<input type="radio" name="slider" value="2">
+			<input type="radio" name="slider" value="3">
+			<input type="radio" name="slider" value="4">
+		</p>
+		<ul id="slides_mine">
+			<li class="slide_mine showing_mine"><img id="0" src="images/slide_0.jpg"></li>
+			<li class="slide_mine"><img id="1" src="images/slide_1.jpg"></li>
+			<li class="slide_mine"><img id="2" src="images/slide_2.jpg"></li>
+			<li class="slide_mine"><img id="3" src="images/slide_3.jpg"></li>
+			<li class="slide_mine"><img id="4" src="images/slide_4.jpg"></li>
+
+		</ul>
+	</div>
+	<main>
+		<div class="pr">
+			<div class="path_2">
+				<h3>Why Thrive?</h3>
+				<p>Want to improve your well-being from the comfort of your own couch? Are you having trouble finding
+					the right therapist? Here at ThriveTalk, our licensed therapists provide the same quality care you
+					would get in office from anywhere you can access your laptop or mobile phone. Become your best self
+					with ThriveTalk. Start therapy now with a licensed therapist!</p>
+			</div>
+		</div>
+		<div class="cart cart_1" id="about">
+			<div><a href="#">Weight Lifting</a> </div>
+			<div><a href="#">Running & Spinning</a> </div>
+			<div><a href="#">Pumping Iron</a> </div>
+			<div><a href="#">Iron</a> </div>
+		</div>
+		<div class="path_3">
+
+			<div class="KNOW">
+				<h6>SHOULD ALSO KNOW</h6>
+
+				<p>MDD affects more than 16.1 million American adults, or about 6.7%of the U.S. population age 18 and
+					older in a given year. We at <a href="#">ThriveTalk</a> can help you.</p>
+				<a href="#">GET HELP NOW</a>
+			</div>
+
+		</div>
+		<div class="path_4">
+			<div class="us">CONTACT US</div>
+			<div class="Ready">Ready. Set. Smile</div>
+			<div class="take">Take the free online assessment to see if you are a candidate and get started on your
+				journey.</div>
+			<div class="get">GET HELP NOW</div>
+		</div>
+
+
+
+		<div class="path_5">
+			<div>
+				<h6>SOME INFO</h6>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+				</p>
+			</div>
+			<div>
+				<h6>ENFOLD HEALTH</h6>
+				<p>Main Street 1, Olcott
+					Buffalo, United States
+				</p>
+				<p>
+					+555 283 784 333
+					<br>
+					<a href="#">office@enfold-health.com</a>
+				</p>
+			</div>
+			<div>
+				<h6>OFFICE HOURS</h6>
+				<p>
+					Mo-Fr: 8:00-19:00
+					Sa: 8:00-14:00
+					Su: closed
+				</p>
+			</div>
+		</div>
+		<div class="parolaks">
+			<div class="parolaks_1"></div>
+			<div class="parolaks_2"></div>
+			<div class="parolaks_3"></div>
+		</div>
+		<div class="xz">
+			<div class="xz_1">ABOUT US</div>
+			<div class="xz_2">We want to help you thrive! Whether you are just looking for someone to talk to, or are
+				struggling with a mental wellness issue we’re here to help. Our highly talented therapists can help you
+				with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just
+				caring for yourself more.
+
+			</div>
+		</div>
+		<div class="parent-div">
+			<div class="parent-div__elem elem-none">
+				<div class="block">
+					<div>>We want to help you thrive! Whether you are just looking for someone to talk to, or are
+						struggling with a mental wellness issue we’re here to help. Our highly talented therapists can
+						help you
+						with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even
+						just
+						caring for yourself more.</div>
+					<div>>We want to help you thrive! Whether you are just looking for someone to talk to, or are
+						struggling with a mental wellness issue we’re here to help. Our highly talented therapists can
+						help you
+						with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even
+						just
+						caring for yourself more.</div>
+					<div>>We want to help you thrive! Whether you are just looking for someone to talk to, or are
+						struggling with a mental wellness issue we’re here to help. Our highly talented therapists can
+						help you
+						with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even
+						just
+						caring for yourself more.</div>
+				</div>
+			</div>
+		</div>
+		<div class="plas">
+			<div class="plas_1">
+				<h5>Nutritional Plans</h5>
+				<div>
+					Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to
+					replace
+					this copy.
+				</div>
+			</div>
+			<div class="plas_2">
+				<h5>Weight Loss</h5>
+				<div>
+					Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to
+					replace
+					this copy.
+				</div>
+			</div>
+			<div class="plas_3">
+				<h5>Mental Peace</h5>
+				<div>
+					Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to
+					replace
+					this copy.
+				</div>
+			</div>
+			<div class="plas_4">
+				<h5>Home Training</h5>
+				<div>
+					Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to
+					replace
+					this copy.
+				</div>
+			</div>
+			<div class="plas_5">
+				<h5>Work/Life Balance</h5>
+				<div>
+					Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to
+					replace
+					this copy.
+				</div>
+			</div>
+			<div class="plas_6">
+				<h5>Cardio</h5>
+				<div>
+					Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to
+					replace
+					this copy.
+				</div>
+			</div>
+		</div>
+	</main>
 
 
 
@@ -80,4 +289,5 @@
 
 	<script src="js/main.js"></script>
 </body>
+
 </html>
