@@ -722,13 +722,55 @@ header {
     transform: translateX(150%);
   }
 }
+
 @keyframes scrollBlock_2 {
   0% {
     transform: scale(0.1);
   }
 }
+
 @keyframes scrollBlock_3 {
   0% {
     transform: translateX(-150%);
   }
+}
+
+.marquee {
+  position: relative;
+  width: 400px;
+  height: 35px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.marquee>p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3500px;
+  animation: marquee 50s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-3500px);
+  }
+}
+
+.calendar table {
+  background: chocolate;
+  border: 3px solid red;
+  margin: 50px auto;
+  width: 200px;
+  border-collapse: collapse;
+}
+
+.calendar td, .calendar th {
+  border: 1px solid gold;
+  text-align: center;
+  padding: 5px;
 }
